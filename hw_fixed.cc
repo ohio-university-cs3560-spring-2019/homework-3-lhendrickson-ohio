@@ -12,7 +12,7 @@ Return Value: the function will return a double wich equals the standard deviati
 
 *********************************************/
 
-double deviation( int a[], int n)
+double deviation( int* a, int n)
 {
 	double sum=0;
 	double count=0;
