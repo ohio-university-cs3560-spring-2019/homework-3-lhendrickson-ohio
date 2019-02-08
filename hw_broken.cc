@@ -1,23 +1,24 @@
 #include <iostream>
-#include <vector>
+#include <array>
 #include <cmath>
 
 
 
-int deviation( int* a, int n )
+int deviation( int a[])
 {
 	int sum;
-	for(size_t i = 0; i <= v.size(); i++)
+
+	for(size_t i = 0; i <= (a.size()-1); i++) //gets the sum of the data so that the mean can be calculated
 	{
-		sum += v[i];
+		sum += a[i];
 	} 
-	double mean = sum /= v.size();
+	double mean = sum /= a.size(); //calculates the mean
 	double stddev = 0;
-	for(size_t i = 0; i <= v.size() -1; i++)
+	for(size_t i = 0; i <= a.size() -1; i++) // calculates the square of differences between each value and the mean and sums them
 	{
-		double stddev = stddev + (v[i] - mean) * (v[i] - mean); 
+		double stddev = (stddev + ((a[i] - mean) * (a[i] - mean))); 
 	}
-	stddev /= v.size();
+	stddev /= a.size();
 	if( stddev = 0)
 		std::cout << "Sigma is zero." << std::endl;
 	return sqrt(stddev);

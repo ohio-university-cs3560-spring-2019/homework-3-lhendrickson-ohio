@@ -1,6 +1,6 @@
 #include <iostream>
 
-int deviation( int* a, int n);
+double deviation( int a[], int n);
 
 int main()
 {
