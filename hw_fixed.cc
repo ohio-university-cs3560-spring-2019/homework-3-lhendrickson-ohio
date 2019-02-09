@@ -1,7 +1,18 @@
 #include <iostream>
 #include <array>
 #include <cmath>
+/**
+\param  n must correspond with the number of elements in a
+\param a must have at least 1 element
+\param n cannot be negative
 
+\brief takes an array of ints and the number of elements and calculates their standard deviation
+
+\return  returns a double indicating the standard deviation of the data set
+
+
+
+*/
 
 
 double deviation(int* a, int n )
