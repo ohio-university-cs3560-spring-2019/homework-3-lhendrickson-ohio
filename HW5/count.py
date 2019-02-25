@@ -1,3 +1,8 @@
+#Liam Hendrickson
+#CS 3560 with Chad Mourning
+#Homework 5 - counting all lines, words, and chars in a directory
+
+
 import sys
 
 for lines in sys.stdin:
